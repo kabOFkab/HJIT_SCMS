@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class SafetyController {
 
-	@RequestMapping("hello") 
+	@RequestMapping("/") 
     public String hello(Model model) {
-	    model.addAttribute("hello", "안녕. 타임리프 테스트."); 
+	    model.addAttribute("hello", "메인화면입니다."); 
 	    
-	    return "hello"; 
+	    return "main"; 
     } 
 	
 }
