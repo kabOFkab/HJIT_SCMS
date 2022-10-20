@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" layout:decorate="~{layout/layout}">
 <th:block layout:fragment="content">
-	<h1>메인화면</h1>
-	<p th:text="${hello}">메인화면</p>
+	<ul class="main_ul">
+		<li><button class="blue-pill">안전순찰</button></li>
+		<li><button class="blue-pill">안전신고</button></li>
+		<li><button class="blue-pill">자료조회</button></li>
+	</ul>
 </th:block>
 </html>
