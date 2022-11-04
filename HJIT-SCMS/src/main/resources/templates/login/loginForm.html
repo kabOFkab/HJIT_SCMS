@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" layout:decorate="~{layout/layout}">
 <th:block layout:fragment="content">
-	<h1>로그인 폼</h1>
-	<button class="blue-pill" th:onclick="|location.href='/login'|">로그인</button>
+	<form role="form" action="/login" id="loginForm" method="post">
+	   <h4>순찰자1 / 신고자1</h4>
+       <div>
+           <input type="text" name="id" id="id" placeholder="아이디" required="required"/>
+       </div>
+       <div>
+           <input type="password" name="password" id="password" placeholder="비밀번호" required="required"/>
+       </div>
+       <h4>순찰자2 / 신고자2</h4>
+       <div>
+           <input type="text" name="user_name2" id="user_name2" placeholder="이름" />
+       </div>
+       <h4>순찰자3 / 신고자3</h4>
+       <div>
+           <input type="text" name="user_name3" id="user_name3" placeholder="이름" />
+       </div>
+       <button type="submit" class="blue-pill">로그인</button>
+   	</form>
 </th:block>
 </html>
