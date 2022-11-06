@@ -11,7 +11,7 @@
                     </a>
                 </li>
                 <li class="menu-item" th:if="${session.loginUser != null}">
-                    <p th:text="${session.loginUser.userNm1 + ' ' + session.loginUser.userNm2 + ' ' + session.loginUser.userNm3}">사용자이름</p>
+                    <p th:text="${session.loginUser.userNm1 + ' ' + #strings.defaultString(session.loginUser.userNm2, '') + ' ' + #strings.defaultString(session.loginUser.userNm3, '')}">사용자이름</p>
                     <a href="/logout">
                         <i class="fas fa-envelope"></i>Loout
                     </a>

@@ -4,19 +4,22 @@
 	<form role="form" action="/login" id="loginForm" method="post">
 	   <h4>순찰자1 / 신고자1</h4>
        <div>
-           <input type="text" name="id" id="id" placeholder="아이디" required="required"/>
+           <input type="text" name="userId1" id="userId1" placeholder="아이디" required="required"/>
        </div>
        <div>
-           <input type="password" name="password" id="password" placeholder="비밀번호" required="required"/>
+           <input type="password" name="userPw1" id="userPw1" placeholder="비밀번호" required="required"/>
        </div>
+       <br />
        <h4>순찰자2 / 신고자2</h4>
        <div>
-           <input type="text" name="user_name2" id="user_name2" placeholder="이름" />
+           <input type="text" name="userNm2" id="userNm2" placeholder="이름" />
        </div>
+       <br />
        <h4>순찰자3 / 신고자3</h4>
        <div>
-           <input type="text" name="user_name3" id="user_name3" placeholder="이름" />
+           <input type="text" name="userNm3" id="userNm3" placeholder="이름" />
        </div>
+       <br /><hr /><br />
        <button type="submit" class="blue-pill">로그인</button>
    	</form>
 </th:block>

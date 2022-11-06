@@ -31,7 +31,7 @@ public class LoginController {
             return "login/loginForm";
         }
 
-        Member loginMember = loginService.login(form.getUserId1(), form.getUserPw1(), form.getUserId2(), form.getUserPw2(), form.getUserId3(), form.getUserPw3());
+        Member loginMember = loginService.login(form.getUserId1(), form.getUserPw1(), form.getUserNm2(), form.getUserNm3());
         log.info("login?{}", loginMember);
         
         HttpSession session = request.getSession();

@@ -8,15 +8,14 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 public class LoginService {
 
-	public Member login(String id1, String pw1, String id2, String pw2, String id3, String pw3) {
+	public Member login(String id1, String pw1, String nm2, String nm3) {
 		Member member = new Member();
 		
-		member.setUserId1("111111");
-		member.setUserId2("222222");
-		member.setUserId3("333333");
+		// 로그인 api 실행
+		member.setUserId1(id1);
 		member.setUserNm1("김갑중");
-		member.setUserNm2("김병성");
-		member.setUserNm3("박용");
+		member.setUserNm2(nm2);
+		member.setUserNm3(nm3);
 		
 		log.info("member?{}", member);
 		
